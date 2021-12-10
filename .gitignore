@@ -1,0 +1,7 @@
+venv/
+
+# Record of prices and time
+log.txt
+# If you use cron to run this script periodically you can declare your environmental variables in this file and
+# set your crontab jere and then just run the command ```crontab -e < cronfile.dat``` to get it started
+cronfile.dat
