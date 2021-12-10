@@ -7,6 +7,7 @@ client = tweepy.Client(os.environ.get('BEARER'), os.environ.get('CONSUMER_TOKEN'
 
 time = datetime.now().strftime('%H:%M')
 # Courtesy of this amazing repository https://github.com/chubin/rate.sx
+# Currently set to get unit price of ADA Cardano in euros
 price = float(requests.get('http://eur.rate.sx/1ADA').text)
 
 with open('log.txt', 'a+') as file:
