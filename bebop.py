@@ -17,7 +17,7 @@ with open('log.txt', 'a+') as file:
     file.write('{} {}\n'.format(price, datetime.now().strftime('%c')))
     try:
         prev_price = float(logs[-1].split()[0])
-        diff = prev_price - price
+        diff = price - prev_price
     except IndexError:
         diff = 0
 
