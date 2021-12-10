@@ -21,5 +21,5 @@ with open('log.txt', 'a+') as file:
     except IndexError:
         diff = 0
 
-client.create_tweet(text=('ADA is at {:.2f}€ | {}€ GMT\n{:.2f} difference from previous record'.format(price, time, diff)))
+client.create_tweet(text=('ADA is at {:.2f}€ | {} GMT\n{:.2f} difference from previous record'.format(price, time, diff)))
 
